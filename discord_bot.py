@@ -4,6 +4,7 @@ import shutil
 import tsumego_detector
 import os
 import uuid
+import private_info
 
 root_path = os.path.dirname(os.path.abspath(__file__))
 output_dir = os.path.join(root_path, "tmp")
@@ -60,4 +61,4 @@ async def on_message(message):
             
 
 
-client.run("OTU3NjQ5MjUwMTYwODY5Mzk4.YkB2XQ.XpiVUIdNFjGavBtQOF0ofXQXdbQ")
+client.run(private_info.discord_bot_key)

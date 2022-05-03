@@ -3,6 +3,7 @@ tools/__pycache__
 clean_problems
 debug
 sgf
+private_info.py
 *.jpg
 *.png
 
