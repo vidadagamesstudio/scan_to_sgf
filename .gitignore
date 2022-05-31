@@ -6,4 +6,7 @@ sgf
 private_info.py
 *.jpg
 *.png
+!images/*.png
+!images/*.jpg
+
 

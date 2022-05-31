@@ -44,7 +44,7 @@ def determinant(line1, line2):
     """
     return int(line1[0]) * int(line2[1]) - int(line1[1]) * int(line2[0])
 
-def find_circle(img, min_radius=7, max_radius=14, circle_params=(100, 45)):
+def find_circles(img, min_radius=7, max_radius=14, circle_params=(100, 45)):
     """
     find circles in an image
     """
@@ -57,6 +57,7 @@ def find_circle(img, min_radius=7, max_radius=14, circle_params=(100, 45)):
     if circles is None:
         return []
     return np.uint16(np.around(circles))
+
 def circle_to_lines(circles):
     lines = []
     for (first_circle_x, first_circle_y, first_cirlce_r) in circles[0, :]:
